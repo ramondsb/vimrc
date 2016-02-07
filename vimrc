@@ -42,6 +42,9 @@ filetype indent on
 filetype plugin on
 set autoindent
 
+" Exit insert mode with 'jk' sequence
+inoremap jk <Esc>
+
 "allow deletion of previously entered data in insert mode
 set backspace=indent,eol,start
 
