@@ -188,7 +188,6 @@ nnoremap <Leader>gR :Gread<CR>
 nnoremap <Leader>gg :Git 
 nnoremap <Leader>gd :Gdiff<CR>
 
-
 "------  Text Editing Utilities  ------
 " <Leader>T = Delete all Trailing space in file
 map <Leader>T :%s/\s\+$//<CR>
@@ -235,6 +234,9 @@ let g:airline_right_sep=''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = ' '
+
+"------  Neocomplete Plugin Settings  ------
+let g:neocomplete#enable_at_startup = 1
 
 
 "------  GUI Options  ------
