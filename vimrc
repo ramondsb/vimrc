@@ -235,6 +235,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = ' '
 
+"------  PhpCtags  Plugin Settings  ------
+let g:tagbar_phpctags_bin='~/bin/phpctags'
+
 "------  Neocomplete Plugin Settings  ------
 let g:neocomplete#enable_at_startup = 1
 
