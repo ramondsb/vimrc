@@ -238,6 +238,9 @@ let g:airline#extensions#tabline#left_alt_sep = ' '
 "------  Neocomplete Plugin Settings  ------
 let g:neocomplete#enable_at_startup = 1
 
+"------  Tagbar Plugin Settings  ------
+nmap <F9> :TagbarToggle<CR>
+
 "------  UltiSnipsPlugin Settings  ------
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
