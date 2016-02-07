@@ -116,6 +116,9 @@ nnoremap <silent> <Leader>Q <C-w>c
 " <Leader>Ctrl+q Force Closes the current buffer
 nnoremap <silent> <Leader><C-q> :Bclose!<CR>
 
+" <Leader>Write buffer to file
+nnoremap <silent> <Leader>w :w<CR>
+
 
 "------  Searching  ------
 set incsearch
