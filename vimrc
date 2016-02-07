@@ -238,6 +238,10 @@ let g:airline#extensions#tabline#left_alt_sep = ' '
 "------  Neocomplete Plugin Settings  ------
 let g:neocomplete#enable_at_startup = 1
 
+"------  UltiSnipsPlugin Settings  ------
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "------  GUI Options  ------
 if has("gui_running")
