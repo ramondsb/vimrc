@@ -166,6 +166,9 @@ autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-right> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 
+" Settings to edit commit messages with Vim"
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 " Open NERDTree if we're executing vim without specifying a file to open
 autocmd vimenter * if !argc() | NERDTree | endif
 
