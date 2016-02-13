@@ -249,6 +249,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+"------  EasyTags Settings  ------
+let g:easytags_async = 1
+
 "------  GUI Options  ------
 if has("gui_running")
 	" Hides toolbar and scrollbars and File menu
