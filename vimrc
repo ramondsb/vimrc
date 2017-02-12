@@ -4,6 +4,7 @@ set nocompatible
 set nomodeline
 set viminfo='1000,f1,:1000,/1000
 set history=1000
+set foldmethod=indent
 
 let pair_program_mode = 0
 
@@ -150,7 +151,7 @@ vmap S :s//g<LEFT><LEFT>
 
 
 "------  NERDTree Options  ------
-let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.DS_Store', '\.swp$', '\.swo$']
+let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.DS_Store', '\.swp$', '\.swo$', '\.log', '\.lo[tf]', '\.out', '\.toc', '\.gz', '\.aux']
 
 "setting root dir in NT also sets VIM's cd
 let NERDTreeChDirMode=2
@@ -254,6 +255,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "------  EasyTags Settings  ------
 let g:easytags_async = 1
+
+"------  PHPQA Settings  ------
+" Set the codesniffer args
+let g:phpqa_codesniffer_args = "--standard=PSR2,PSR1"
 
 "------  GUI Options  ------
 if has("gui_running")
