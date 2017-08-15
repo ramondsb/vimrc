@@ -149,9 +149,12 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|coverage|target|dist)|(\.(swp|i
 nmap S :%s//g<LEFT><LEFT>
 vmap S :s//g<LEFT><LEFT>
 
+" Set ignore filetypes in NerdTree
+" Latex related
+let latex_ignore = ['\.fls', '\.fdb_latexmk', '\.swn', '\.bbl', '\.blg']
 
 "------  NERDTree Options  ------
-let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.DS_Store', '\.swp$', '\.swo$', '\.log', '\.lo[tf]', '\.out', '\.toc', '\.gz', '\.aux']
+let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.DS_Store', '\.swp$', '\.swo$', '\.log', '\.lo[tf]', '\.out', '\.toc', '\.gz', '\.aux'] +  latex_ignore
 
 "setting root dir in NT also sets VIM's cd
 let NERDTreeChDirMode=2
